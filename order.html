@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PureVita</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <style>
+        body{
+            background-attachment: fixed;
+            background-size: cover;
+            font-family: 'Poppins';
+            overflow-y: scroll;
+        }
+    </style>
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+    <section id = "header">
+        <a href=""><img src="./Asset/logo.png" class="logo"></a>
+
+        <div>
+            <ul id = "navbar">
+                <li><a class = "active" href="home.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="order.html"><b>Order</b></a></li>
+                
+                <li><a href="aboutus.html">About Us</a></li>
+                <a href="#" id = "times"><i class = "fa fa-times"></i></a>
+            </ul>
+        </div>
+
+        <div id = "mobile">
+            <i id = "bar" class = "fa fa-bars"></i>
+        </div>
+
+    </section>
+
+    <main class="main">
+        <div class="address">
+            <div class="text">
+                <div><b>Shipping Address</b></div>
+                <div>Nicho Dahendra (0812-4589-3598)</div>
+                <div>nichdah12@gmail.com</div>
+                <div>Jalan Setia Budi Kav 89, District 8, Jakarta Selatan, DKI Jakarta, Indonesia, 21056, ID</div>
+            </div>
+            <a href="" class="button scaleUp"><p class="scaleUpText">Edit</p></a>
+        </div>
+        <div class="basket">
+            <div class="header">
+                <p class="titleBig">Product</p>
+                <p class="title">Price</p>
+                <p class="title">Quantity</p>
+                <p class="title">Total</p>
+            </div>
+            <div class="products">
+                <div class="product">
+                    <div class="title">
+                        <div class="imageDiv">
+                            <img class="image" src="Asset/semangka.png">
+                        </div>
+                        
+                        <div class="typeNName">
+                            <div class="type">Fruit</div>
+                            <div class="name">Watermelon</div>
+                        </div>
+                    </div>
+                    <div class="price">Rp. 41.900</div>
+                    <div class="quantityGroup">
+                        <div class="decrease">-</div>
+                        <div class="quantity">1</div>
+                        <div class="increase">+</div>
+                    </div>
+                    <div class="productTotal">Rp. 41.900</div>
+                </div>
+                <div class="product">
+                    <div class="title">
+                        <div class="imageDiv">
+                            <img class="image" src="Asset/kol_merah.png">
+                        </div>
+                        
+                        <div class="typeNName">
+                            <div class="type">Vegetable</div>
+                            <div class="name">Red Cabbage</div>
+                        </div>
+                    </div>
+                    <div class="price">Rp. 30.000</div>
+                    <div class="quantityGroup">
+                        <div class="decrease">-</div>
+                        <div class="quantity">1</div>
+                        <div class="increase">+</div>
+                    </div>
+                    <div class="productTotal">Rp. 30.000</div>
+                </div>
+            </div>
+            <div class="total">
+                <a href="product.html" class="return scaleUp"><p class="scaleUpText">Return to Store</p></a>
+                <div class="price">
+                    <div class="text">Total</div>
+                    <div id="totalQuantity">2</div>
+                    <div id="totalPrice">Rp. 71.900</div>
+                </div>
+            </div>
+            <a href="" class="checkout scaleUp"><p class="scaleUpText">Checkout</p></a>
+        </div>
+    </main>
+
+    <footer>
+        <div class = "col" id = "part">
+            <img class = "logofooter" src="./Asset/logo.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address: </strong>Jl. Kemanggisan Raya No. 15, Jakarta Barat</p>
+            <p><strong>Phone: </strong>021 1231456</p>
+            <p><strong>Hours: </strong>09.00 - 17.00 WIB</p>
+        
+
+            
+        </div>
+
+        <div class = "col" id = "part">
+            <h4>About</h4>
+            <a href="aboutus.html">About Us</a>
+            <a href="">Privacy and Policy</a>
+            <a href="">Terms and Conditions</a>
+            <a href="">Contact Us</a>
+        </div>
+
+        <div class = "col" id = "part">
+            <h4>Account</h4>
+            <a href="">Sign In</a>
+            <a href="">Sign Up</a>
+            <a href="">Order List</a>
+            <a href="">Help</a>
+        </div>
+
+        <div class = "install" id = "part">
+            <h4>Find App</h4>
+            <div class = "row">
+                <img class = "gp" src="./Asset/google_store.png" alt="">
+                <img class = "ap" src="./Asset/app_store.png" alt="">
+            </div>
+            <div class = "sosmed">
+                <h4>Follow Us</h4>
+                <div class = "icon">
+                    <i class = "fab fa-facebook"></i>
+                    <i class = "fab fa-instagram"></i>
+                    <i class = "fab fa-twitter"></i>
+                    <i class = "fab fa-tiktok"></i>
+                    <i class = "fab fa-whatsapp"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class = "payment" id = "part">
+            <h4>Payment</h4>
+            <div class = "row">
+                <img class = "mc" src="./Asset/mastercard.png">
+                <img class = "pp" src="./Asset/bca.png">
+            </div>
+
+        </div>
+
+        <div class = "copyright">
+            <p>PureVita Company Right and Reserved © 2023.</p>
+        </div>
+
+    </footer>
+
+</body>
+</html>
+
+<script src="order.js"></script>

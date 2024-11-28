@@ -1,0 +1,491 @@
+body{
+    margin: 0px;
+}
+
+/* Header */
+
+#header{
+    display: flex;
+    background-color: #B2E8AA;
+    height: 55px;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    z-index: 5;
+    top: 0;
+    left: 0;
+}
+
+#header img{
+    margin-left: 10px;
+    height: 50px;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li{
+    list-style: none;
+    position: relative;
+}
+
+#navbar li a{
+    margin-left: 25px;
+    margin-right: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+#mobile{
+    display: none;
+    align-items: center;
+}
+
+#times{
+    display: none;
+    align-items: center;
+}
+
+/* Main */
+.main{
+    margin-bottom: 100px;
+}
+
+.address{
+    font-size: 20px;
+    display: flex;
+    height: 150px;
+    margin: 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.address .text{
+    margin-left: 15px;
+    margin-top: 15px;
+    width: 90%;
+}
+
+.address .button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #69A061;
+    color: white;
+    border-radius: 7px;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-left: auto;
+    text-decoration: none;
+    width: 108px;
+    height: 30px;
+}
+
+.basket .header{
+    background-color: #69A061;
+    height: 50px;
+    display: flex;
+    font-size: 20px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    border-radius: 7px;
+}
+
+.basket .header .titleBig{
+    text-align: center;
+    width: 40%;
+}
+
+.basket .header .title{
+    text-align: center;
+    width: 20%;
+}
+
+.product{
+    display: flex;
+    margin: 30px;
+    height: 150px;
+    font-size: 20px;
+    border: 1px solid #557D4F;
+    /* justify-content: space-between; */
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.product .title{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 40%;
+}
+
+.product .title .imageDiv{
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.product .title .imageDiv .image{
+    height: 100%;
+    margin-left: auto;
+}
+
+.product .title .typeNName{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product .title .typeNName .type{
+    font-weight: lighter;
+    font-size: 16px;
+    padding-bottom: 55px;
+    position: absolute;
+}
+
+.product .price{
+    text-align: center;
+    width: 20%;
+}
+
+.product .productTotal{
+    text-align: center;
+    width: 20%;
+}
+
+.product .quantityGroup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+
+.product .quantityGroup .quantity{
+    text-align: center;
+    width: 20px;
+}
+
+.product .quantityGroup .decrease{
+    margin-right: 10%;
+    transition: 0.5s;
+}
+
+.product .quantityGroup .decrease:hover{
+    user-select: none;
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+.product .quantityGroup .increase{
+    margin-left: 10%;
+    transition: 0.5s;
+}
+
+.product .quantityGroup .increase:hover{
+    user-select: none;
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+.total{
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    align-items: center;
+}
+
+.total .return{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    border-radius: 7px;
+    width: 200px;
+    height: 50px;
+    margin-left: 30px;
+    background-color: #69A061; 
+    justify-content: center;
+    align-items: center;
+}
+
+.total .price{
+    margin-left: auto;
+    margin-right: 30px;
+    display: flex;
+    width: 55%;
+    height: 50px;
+    color: #69A061;
+    border: 2px solid #69A061;
+    /* background-color: #69A061;  */
+    border-radius: 7px;
+    align-items: center;
+}
+
+.total .price .text{
+    text-align: center;
+    margin-left: 4%;
+    margin-right: 14%;
+    width: 20%;
+}
+
+.total .price #totalQuantity{
+    text-align: center;
+    width: 20%;
+    margin-right: 9%;
+}
+
+.total .price #totalPrice{
+    text-align: center;
+    width: 30%;
+}
+
+.checkout{
+    display: flex;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 7px;
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: 30px;
+    background-color: #69A061; 
+    justify-content: center;
+    align-items: center;
+}
+
+.scaleUpText{
+    transition: 0.5s;
+}
+
+.scaleUp:hover > .scaleUpText{
+    transform: scale(1.2);
+}
+
+/* Footer */
+footer{
+    background-color: #B2E8AA;
+    /* margin: 40px 40px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+footer .logofooter{
+    height: 50px;
+    margin-left: 0px;
+    margin-bottom: 30px;
+}
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+footer #part{
+    margin: 10px 20px 10px 20px;
+}
+
+footer h4{
+    font-size: 14px;
+    padding-bottom: 8px;
+}
+
+footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 10px;
+}
+
+footer .sosmed i{
+    color: black;
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+footer .payment .row .mc{
+    height: 40px;
+}
+
+footer .install .row .gp{
+    height: 35px;
+}
+
+footer .install .row .ap{
+    height: 35px;
+}
+
+footer .payment .row .pp{
+    height: 40px;
+}
+
+footer .copyright{
+    text-align: center;
+    width: 100%;
+}
+
+@media screen and (max-width: 1020px){
+    .address{
+        font-size: 16px;
+        height: 120px;
+    }
+    .product .title .imageDiv .image{
+        height: 80%;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .product .title .imageDiv .image{
+        height: 60%;
+    }
+}
+
+@media screen and (max-width: 850px){
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 30vh;
+        width: 200px;
+        background-color:  #a0dd96;
+        padding: 80px 0 0 10px;
+        transition: 0.8s;
+        margin-top: 0;
+    }
+    
+    #navbar.active{
+        right: 0px;
+    }
+    
+    #navbar li{
+        margin-bottom: 15px;
+    }
+    
+    #mobile{
+        display: flex;
+        align-items: center;
+        font-size: 24px;
+        color: black;
+        margin-right: 20px;
+    }
+    
+    #times{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: black;
+        font-size: 25px;
+    }
+
+    .address{
+        font-size: 12px;
+        height: 100px;
+    }
+    .address .button{
+        width: 72px;
+        height: 20px;
+    }
+    .basket .header{
+        font-size: 16px;
+    }
+    .product{
+        font-size: 16px;
+    }
+    .product .title .typeNName .type{
+        font-size: 12px;
+        padding-bottom: 30px;
+    }
+    .total{
+        font-size: 16px;
+    }
+    .checkout{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .main{
+        margin-bottom: 50px;
+    }
+    .address{
+        font-size: 10px;
+        height: 80px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .address .text{
+        margin-left: 10px;
+        margin-top: 8px;
+    }
+    .basket .header{
+        margin-top: 0px;
+        margin-bottom: 15px;
+        height: 35px;
+        font-size: 12px;
+    }
+    .product{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: 12px;
+        height: 100px;
+    }
+    .product .title .imageDiv .image{
+        height: 70%;
+    }
+    .product .title .typeNName .type{
+        font-size: 10px;
+    }
+    .total{
+        font-size: 12px;
+    }
+    .total .return{
+        width: 120px;
+        height: 30px;
+    }
+    .total .price{
+        height: 30px;
+    }
+    .checkout{
+        margin-top: 10px;
+        width: 120px;
+        height: 30px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 565px){
+    .address{
+        font-size: 8px;
+        height: 65px;
+    }
+    .address .button{
+        margin-top: 8px;
+        margin-right: 10px;
+    }
+    .product{
+        height: 80px;
+    }
+}
